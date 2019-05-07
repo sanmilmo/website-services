@@ -1,25 +1,46 @@
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .navbar {
-    background-color: #23415C;
+    background-color: rgba(2, 0, 0, 1);
     padding: 1% 0;
-    font-size: 1.2em;
+    font-size: 18px;
+    opacity: .8;
+    box-shadow: 0 1px 3px 0 rgba(255,255,255,.2);
+    font-weight: 300;
+    border-style: hidden;
+    min-height: 70px;
+}
+.navbar-default .navbar-brand {
+    color:#ffffe6;
+    font-family: Cherry Swash;
+    font-size: 26px;
 }
 .navbar-brand {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
-    font-family: Permanent Marker;
+    font-family: Cherry Swash, sans-serif, arial;
 }
 .navbar-default .navbar-nav li a {
     color: #D5D5D5;
 }
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
-    color: gray;
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav {
+    color: #ff9999;
+}
+ul li ul li{
+    display: none;
+}
+ul li{
+    display: block;
+}
+.margin-row{
+    margin-top: -60px;
 }
 #home {
-    background: url(img/mountains1.jpg) no-repeat center center fixed;
+    background: url(img/index.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -27,6 +48,8 @@ html, body {
     background-size: cover;
 }
 .landing-text {
+    color: #ff9999;
+    font-family: Cherry Swash;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -34,31 +57,53 @@ html, body {
 .landing-text h1 {
     font-size: 500%;
     font-weight: 700;
-}
-.landing-text h3 {
-    color: black;
-    font-size: 250%;
-    font-family: "Comic Sans MS";
+    text-shadow: -2px 0 black, 0 1px black;
 }
 .padding {
-    padding: 80px 0;
+    padding: 60px 0;
+}
+.padding h2{
+    font-weight: bold;
 }
 .padding img{
     width: 100%;
 }
+.row h4{
+    font-weight: bold;
+}
+
 #fixed {
     background: url(img/background.jpg) no-repeat center center fixed;
     display: table;
-    height: 60%;
+    height: 40%;
     position: relative;
     width: 100%;
     background-size: cover;
 }
+#about {
+    background: url(img/about-us.jpg) no-repeat center center fixed;
+    display: table;
+    height: 70%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+#service-up {
+    background: url(img/services.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.col-sm-6 img{
+    border-radius: 50%;
+}
 footer {
     width: 100%;
-    background-color: #23415C;
-    padding: 5% 5% 10% 5%;
-    color: #FFF;
+    background-color: #020000;
+    padding: 30px 0;
+    color: #7f8c8d;
 }
 .fa {
     padding: 15px;
@@ -72,16 +117,92 @@ footer {
 .icon {
     max-width: 200px;
 }
-@media (max-width: 768px){
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
     .landing-text h1 {
-        font-size: 300%;
+        font-size: 200%;
+        font-weight: 100;
     }
-    .fa  {
-        font-size: 20px;
-        padding: 10px;
+    #home {
+        height: 70%;
     }
-    .icon {
-        padding-top: 5%;
-        max-width: 100px;
+    .margin-row{
+        margin-top: -92px;
+    }
+    .margin-two{
+        margin-top: 20px;
+    }
+    #service-up{
+        height: 60%;
+    }
+    .margin-img-desk{
+        margin-bottom: 25px;
+    }
+    .margin-dream{
+        margin-bottom: -40px;
+    }
+    #fixed{
+        margin-top: -30px;
+    }
+    .margin-about{
+        margin-top: 20px;
+        margin-bottom: -20px;
     }
 }
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    #home {
+        height: 60%;
+    }
+    .margin-row{
+        margin-top: -92px;
+    }
+    .margin-two {
+        margin-top: 40px;
+    }
+    #service-up{
+        height: 60%;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .margin-cloud{
+        margin-top: 40px;
+    }
+    .margin-web{
+        margin-top: -30px;
+    }
+    .margin-desktop{
+        margin-top: 80px;
+    }
+    .margin-img-desk{
+        margin-top: -240px;
+        margin-bottom: 30px;
+    }
+    #service-up{
+        height: 60%;
+    }
+    .margin-dream{
+        margin-bottom: -50px;
+    }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .margin-desktop{
+        margin-top: -30px;
+    }
+    .margin-img-desk{
+        margin-top: -30px;
+    }
+    .margin-cloud{
+        margin-top: 0;
+    }
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #fixed{
+        padding-bottom: 40px;
+    }
+}
+
+

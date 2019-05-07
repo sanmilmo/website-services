@@ -1,0 +1,22 @@
+{
+  "name": "camocreations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanmilmo/website-services.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanmilmo/website-services/issues"
+  },
+  "homepage": "https://github.com/sanmilmo/website-services#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
